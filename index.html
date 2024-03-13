@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">My Docs</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Работа с сокетами</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#1" class="nav-link">Задание 1</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">Выполнение</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">Пример работы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#2" class="nav-link">Задание 2</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">Выполнение</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_9" class="nav-link">Пример работы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#3" class="nav-link">Задание 3</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">Выполнение</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_13" class="nav-link">Пример работы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#4" class="nav-link">Задание 4</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_14" class="nav-link">Выполнение</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_17" class="nav-link">Пример работы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#5" class="nav-link">Задание 5</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_18" class="nav-link">Выполнение</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_20" class="nav-link">Пример работы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-django" class="nav-link">Реализация веб-сервиса для тур-агенств на Django</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1_1" class="nav-link">1. Задача</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2_1" class="nav-link">2. Как выполнялась работа</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3_1" class="nav-link">3. Фрагменты кода</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4_1" class="nav-link">4. Краткий вывод</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#api" class="nav-link">Точки доступа к API животных</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_21" class="nav-link">Список животных</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_23" class="nav-link">Получение информации о животном</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_25" class="nav-link">Животные в зимних вольерах</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_27" class="nav-link">Получение информации о зимнем месте</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_29" class="nav-link">Еда для животных</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_31" class="nav-link">Диеты</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_33" class="nav-link">Получение информации о диете</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_35" class="nav-link">Получение информации об области</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_37" class="nav-link">Список сред обитания</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_39" class="nav-link">Получение информации о среде обитания</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_41" class="nav-link">Дополнительные настраиваемые действия</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_42" class="nav-link">Показать пустые клетки</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_44" class="nav-link">Животные в конкретной области</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_46" class="nav-link">Животные в аренде</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-django-react" class="nav-link">Реализация веб-сервиса зоопарка Django + React</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1_2" class="nav-link">1. Задача</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2_2" class="nav-link">2. Как выполнялась работа</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3_2" class="nav-link">3. Фрагменты кода</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4_2" class="nav-link">4. Скриншоты работы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Работа с сокетами</h1>
+<h1 id="1">Задание 1</h1>
+<p>Реализовать клиентскую и серверную часть приложения. Клиент
+отсылает серверу сообщение «Hello, server». Сообщение должно
+отразиться на стороне сервера. Сервер в ответ отсылает клиенту
+сообщение «Hello, client». Сообщение должно отобразиться у клиента.
+Обязательно использовать библиотеку socket. Реализовать с помощью
+протокола UDP.</p>
+<h2 id="_2">Выполнение</h2>
+<h3 id="_3">Реализация сервера</h3>
+<pre><code>import socket
+# HEADERSIZE = 4
+# AF_INET - IPv4
+# SOCK_STREAM - TCP
+#  SOCK_DGRAM - UDP
+def main():
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    server_socket.bind(('localhost', 9090))
+
+    while True:
+        data, client_address = server_socket.recvfrom(1024)
+        if data:
+            message = data.decode('utf-8')
+            print(f"Received message from {client_address}: {message}")
+            server_socket.sendto("Hello client!".encode("utf-8"), client_address)
+
+
+if __name__ == "__main__":
+    main()
+</code></pre>
+<h3 id="_4">Реализация клиента</h3>
+<pre><code>import socket
+
+
+def send_and_receive_message():
+    client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    server_address = ('localhost', 9090)
+
+    try:
+        client.sendto("Hello, server!".encode('utf-8'), server_address)
+        resp, _ = client.recvfrom(1234)
+        print("Response from server:", resp.decode("utf-8"))
+    except Exception as e:
+        print("Error:", str(e))
+    finally:
+        client.close()
+
+
+if __name__ == "__main__":
+    send_and_receive_message()
+</code></pre>
+<h2 id="_5">Пример работы</h2>
+<p><img alt="Пример задания 1" src="assets/task_1.png" /></p>
+<h1 id="2">Задание 2</h1>
+<p>Реализовать клиентскую и серверную часть приложения. Клиент запрашивает у
+сервера выполнение математической операции(поиск площади параллелограмма), параметры, которые вводятся с
+клавиатуры. Сервер обрабатывает полученные данные и возвращает результат
+клиенту.</p>
+<h2 id="_6">Выполнение</h2>
+<h3 id="_7">Реализация сервера</h3>
+<pre><code>import socket
+
+
+def main():
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server.bind(('localhost', 9999))
+    server.listen(2)
+    print(f"Server is running on http://localhost:9999")
+
+    while True:
+        client, address = server.accept()
+        a, b = client.recv(1024).decode('utf-8').split(',')
+        data = str(int(a) * int(b))
+        print(data)
+        client.send(data.encode('utf-8'))
+        client.close()
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<h3 id="_8">Реализация клиента</h3>
+<pre><code>import socket
+
+
+def main():
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        client.connect(('localhost', 9999))
+        a = input('Введите высоту параллелограмма: ')
+        b = input('Введите длину стороны параллелограмма: ')
+        data = a + ',' + b
+        client.send(data.encode('utf-8'))
+        print('Площадь параллелограмма равна: ' + client.recv(1024).decode('utf-8'))
+    except Exception as e:
+        print('Error: ', str(e))
+    finally:
+        client.close()
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<h2 id="_9">Пример работы</h2>
+<p><img alt="Пример задания 2" src="assets/task_2.png" /></p>
+<h1 id="3">Задание 3</h1>
+<p>Реализовать серверную часть приложения. Клиент подключается к серверу. В ответ
+клиент получает http-сообщение, содержащее html-страницу, которую сервер
+подгружает из файла index.html.</p>
+<h2 id="_10">Выполнение</h2>
+<h3 id="_11">Реализация сервера</h3>
+<pre><code>import socket
+
+
+def get_response():
+    try:
+        with open('index.html') as file:
+            content = file.read()
+    except FileNotFoundError:
+        content = "&lt;html&gt;&lt;body&gt;&lt;h1&gt;File index.html isn't found&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;"
+    response = f"HTTP/1.1 200 OK\r\nContent-Length: {len(content)}\r\n\r\n{content}"
+    return response
+
+
+def main():
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server.bind(('localhost', 9999))
+    server.listen(1)
+    print(f"Server is running on http://localhost:9999")
+
+    while True:
+        client, address = server.accept()
+        response = get_response()
+        client.send(response.encode('utf-8'))
+        client.close()
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<h3 id="_12">Реализация клиента</h3>
+<pre><code>import socket
+
+
+def main():
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    try:
+        client.connect(('localhost', 9999))
+        response = client.recv(1024).decode('utf-8')
+        print(response)
+    except Exception as e:
+        print('Error: ', str(e))
+    finally:
+        client.close()
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<h2 id="_13">Пример работы</h2>
+<p><img alt="Пример задания 3" src="assets/task_3.png" /></p>
+<h1 id="4">Задание 4</h1>
+<p>Реализовать двухпользовательский или многопользовательский чат. Для применения с TCP необходимо запускать клиентские подключения И прием
+и отправку сообщений всем юзерам на сервере в потоках. Не забудьте сохранять юзеров,
+чтобы потом отправлять им сообщения.</p>
+<h2 id="_14">Выполнение</h2>
+<h3 id="_15">Реализация сервера</h3>
+<pre><code>import socket
+import threading
+
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind(('localhost', 9999))
+server.listen()
+
+clients = []
+nicknames = []
+
+
+def broadcast(message):
+    for client in clients:
+        client.send(message)
+
+
+def handle(client):
+    while True:
+        try:
+            message = client.recv(1024)
+            broadcast(message)
+        except:
+            index = clients.index(client)
+            clients.remove(client)
+            client.close()
+            nickname = nicknames[index]
+            broadcast(f'{nickname} left the chat.'.encode('utf-8'))
+            nicknames.remove(nickname)
+            break
+
+
+def receive():
+    while True:
+        client, address = server.accept()
+        client.send('Nick'.encode('utf-8'))
+        nickname = client.recv(1024).decode('utf-8')
+        nicknames.append(nickname)
+        clients.append(client)
+
+        print(f'Nickname of the client is: {nickname}')
+        broadcast(f'{nickname} joined the chat.'.encode('utf-8'))
+        client.send('Connected to the server'.encode('utf-8'))
+
+        thread = threading.Thread(target=handle, args=(client,))
+        thread.start()
+
+
+print('Server is listening...')
+receive()
+</code></pre>
+<h3 id="_16">Реализация клиента</h3>
+<pre><code>import socket
+import threading
+
+nickname = input('Choose a nickname: ')
+
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(('localhost', 9999))
+
+
+def receive():
+    while True:
+        try:
+            message = client.recv(1024).decode('utf-8')
+            if message == 'Nick':
+                client.send(nickname.encode('utf-8'))
+            else:
+                print(message)
+        except:
+            print('An error occurred.')
+            client.close()
+            break
+
+
+def write_message():
+    while True:
+        message = f'{nickname}: {input("")}'
+        client.send(message.encode('utf-8'))
+
+
+receive_thread = threading.Thread(target=receive)
+receive_thread.start()
+
+write_thread = threading.Thread(target=write_message)
+write_thread.start()
+</code></pre>
+<h2 id="_17">Пример работы</h2>
+<p><img alt="Пример задания 4" src="assets/task_4.png" /></p>
+<h1 id="5">Задание 5</h1>
+<p>Необходимо написать простой web-сервер для обработки GET и POST http
+запросов средствами Python и библиотеки socket.</p>
+<h2 id="_18">Выполнение</h2>
+<h3 id="_19">Реализация сервера</h3>
+<pre><code>import socket
+
+
+class MyHTTPServer:
+    def __init__(self, host, port, server_name):
+        self._host = host
+        self._port = port
+        self._server_name = server_name
+        self.grades = []
+        self.subjects = []
+
+    def serve_forever(self):
+        serv_sock = socket.socket(
+            socket.AF_INET,
+            socket.SOCK_STREAM,
+            proto=0
+        )
+
+        try:
+            serv_sock.bind((self._host, self._port))
+            serv_sock.listen()
+
+            while True:
+                conn, _ = serv_sock.accept()
+                try:
+                    self.serve_client(conn)
+                except Exception as e:
+                    print('Client serving failed', e)
+        finally:
+            serv_sock.close()
+
+    def serve_client(self, conn):
+        try:
+            req = self.parse_request(conn)
+            if req.method == 'GET':
+                print("Get request started")
+                resp = self.handle_get_request(req)
+            elif req.method == 'POST':
+                print("Post req started")
+                resp = self.handle_post_request(req)
+            else:
+                resp = self.create_response(405, 'Method Not Allowed', 'Only GET and POST methods are supported.')
+
+            self.send_response(conn, resp)
+        except ConnectionResetError:
+            conn = None
+        except Exception as e:
+            self.send_error(conn, e)
+
+        if conn:
+            conn.close()
+
+    def parse_request(self, conn):
+        request_data = b''
+        while b'\r\n\r\n' not in request_data:
+            data = conn.recv(1024)
+            if not data:
+                break
+            request_data += data
+
+        if not request_data:
+            raise ValueError('Invalid request')
+
+        request_lines = request_data.decode('utf-8').split('\r\n')
+        method, path, _ = request_lines[0].split(' ')
+        headers = {}
+        for line in request_lines[1:]:
+            if ':' in line:
+                key, value = line.split(':', 1)
+                headers[key.strip()] = value.strip()
+
+        if "?" in path:
+            params = (
+                {p.split("=")[0]: p.split("=")[1] for p in path.split("?")[1].split("&amp;")}
+                    )
+        else:
+            params = None
+
+        print(params)
+
+        return HTTPRequest(method, path.split("?")[0], headers, params)
+
+    def handle_get_request(self, req):
+        if req.path == '/':
+            response_body = '&lt;html&gt;&lt;body&gt;&lt;h1&gt;List of subjects&lt;/h1&gt;&lt;ul&gt;{}&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;'
+            items = ''.join(
+                '&lt;li&gt;{} - {}&lt;/li&gt;'.format(subject, grade) for subject, grade in zip(self.subjects, self.grades))
+            response_body = response_body.format(items)
+            return self.create_response(200, 'OK', response_body)
+        else:
+            return self.create_response(404, 'Not Found', 'Page not found')
+
+    def handle_post_request(self, req):
+        if req.path == '/record':
+            self.grades.append(req.params.get("grade"))
+            self.subjects.append(req.params.get("subject"))
+            return self.create_response(200, 'OK', 'Record saved')
+        else:
+            return self.create_response(404, 'Not Found', 'Page not found')
+
+    def create_response(self, status_code, status_text, body):
+        response = f"HTTP/1.1 {status_code} {status_text}\r\n"
+        response += f"Server: {self._server_name}\r\n"
+        response += "Content-Type: text/html\r\n"
+
+        response += f"Content-Length: {len(body)}\r\n"
+        response += "\r\n"
+        response += body
+
+        return response.encode('utf-8')
+
+    def send_response(self, conn, resp):
+        conn.sendall(resp)
+
+    def send_error(self, conn, err):
+        error_message = f"HTTP/1.1 500 Internal Server Error\r\n\r\nError: {err}"
+        conn.sendall(error_message.encode('utf-8'))
+
+
+class HTTPRequest:
+    def __init__(self, method, path, headers, params):
+        self.method = method
+        self.path = path
+        self.headers = headers
+        self.params = params
+
+    def read_body(self, length):
+        body = b''
+        while len(body) &lt; length:
+            data = self.conn.recv(length - len(body))
+            if not data:
+                break
+            body += data
+
+        return body.decode('utf-8')
+
+
+if __name__ == '__main__':
+    host = 'localhost'
+    port = 8000
+    name = 'UselessStudentServer'
+
+    serv = MyHTTPServer(host, port, name)
+    print("Server listening on port", port)
+    try:
+        serv.serve_forever()
+    except KeyboardInterrupt:
+        pass
+</code></pre>
+<h2 id="_20">Пример работы</h2>
+<p><img alt="Пример задания 5" src="assets/task_5_2.png" />
+<img alt="Пример задания 5" src="assets/task_5_1.png" /></p>
+<hr />
+<h1 id="-django">Реализация веб-сервиса для тур-агенств на Django</h1>
+<h2 id="1_1">1. Задача</h2>
+<p>Целью было создать веб-сервис для управления тур-агенством с использованием фреймворка Django. Сервис должен позволять пользователям регистрироваться, просматривать список туров, делать бронирование, писать отзывы и просматривать список купленных туров.</p>
+<h2 id="2_1">2. Как выполнялась работа</h2>
+<ul>
+<li><strong>Начальная настройка</strong>: Создан проект Django под названием <code>travel_agency</code> и приложение Django под названием <code>agency</code>.</li>
+<li><strong>Создание моделей</strong>: Определены модели в <code>models.py</code> для <code>Agency</code> (Агенство), <code>Tour</code> (Тур), <code>Reservation</code> (Бронирование), <code>Review</code> (Отзыв).</li>
+<li><strong>Функции представления</strong>: Разработаны представления для стартовой страницы, регистрации, списка туров, их бронирование и написания отзывов, а также фильтрация по странам.</li>
+<li><strong>Сопоставление URL</strong>: Сопоставлены шаблоны URL с функциями представления в <code>urls.py</code>.</li>
+<li><strong>Шаблоны</strong>: Созданы HTML-шаблоны для каждого представления для отображения данных.</li>
+<li><strong>Стилизация</strong>: Применены стили CSS для минималистичного дизайна всех страниц.</li>
+<li><strong>Аутентификация пользователей</strong>: Использована встроенная аутентификация пользователей Django для функций регистрации и входа.</li>
+<li><strong>Динамическое содержимое</strong>: Включена динамическая генерация URL в шаблонах для навигации.</li>
+</ul>
+<h2 id="3_1">3. Фрагменты кода</h2>
+<h3 id="modelspy">Фрагмент из models.py</h3>
+<pre><code class="language-python">class Agency(models.Model):
+    name = models.CharField(max_length=200)
+    description = models.TextField(null=True, blank=True)
+
+    def str(self):
+        return self.name
+
+
+class Tour(models.Model):
+    name = models.CharField(max_length=200)
+    agency = models.ForeignKey(Agency, on_delete=models.CASCADE, related_name='tours')
+    description = models.TextField()
+    start_date = models.DateField()
+    end_date = models.DateField()
+    country = models.CharField(max_length=200)
+    payment_conditions = models.TextField()
+
+    def str(self):
+        return self.name
+</code></pre>
+<h3 id="viewspy">Фрагмент из views.py</h3>
+<pre><code class="language-python">@login_required
+def tour_list(request):
+    tours = Tour.objects.all()
+    return render(request, 'tour_list.html', {'tours': tours})
+
+
+@login_required
+def tour_detail(request, tour_id):
+    tour = get_object_or_404(Tour, pk=tour_id)
+    return render(request, 'tour_detail.html', {'tour': tour})
+
+</code></pre>
+<h3 id="reserve_tourhtml">Фрагмент из reserve_tour.html</h3>
+<pre><code class="language-html">{% extends 'base.html' %} {% block content %}
+&lt;h2&gt;Забронировать тур: {{ tour.name }}&lt;/h2&gt;
+&lt;form method=&quot;post&quot;&gt;
+  {% csrf_token %} {{ form.as_p }}
+  &lt;button type=&quot;submit&quot;&gt;Reserve&lt;/button&gt;
+&lt;/form&gt;
+{% endblock %}
+</code></pre>
+<h3 id="urlspy">Фрагмент из urls.py</h3>
+<pre><code class="language-python">urlpatterns = [
+    path('register/', views.register, name='register'),
+    path('agency/', views.tour_list, name='tour_list'),
+    path('agency/&lt;int:tour_id&gt;/', views.tour_detail, name='tour_detail'),
+    path('agency/&lt;int:tour_id&gt;/reserve/', views.reserve_tour, name='reserve_tour'),
+    path('agency/&lt;int:tour_id&gt;/comment/', views.tour_detail, name='tour_comment'),
+    path('tours_by_country/', views.tours_by_country_view, name='tours_by_country'),
+]
+</code></pre>
+<h2 id="4_1">4. Краткий вывод</h2>
+<p>Лабораторная была выполнена успешно, демонстрируя возможности Django для быстрой разработки и его мощную ORM для взаимодействия с базой данных. Теперь, когда у нас установлена надежная база, веб-сервис обеспечивает легкую навигацию, делая пользовательский опыт плавным и интуитивно понятным.</p>
+<hr />
+<h1 id="api">Точки доступа к API животных</h1>
+<h2 id="_21">Список животных</h2>
+<p><code>GET /system/animals/</code>
+Возвращает список всех животных.</p>
+<h3 id="_22">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать список животных.
+Администраторы: Могут просматривать список животных.</p>
+<h2 id="_23">Получение информации о животном</h2>
+<p><code>GET /system/animals/{id}/</code>
+Получает информацию о конкретном животном по ID.</p>
+<h3 id="_24">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать информацию о животном.
+Администраторы: Могут просматривать информацию о животном.</p>
+<h2 id="_25">Животные в зимних вольерах</h2>
+<p><code>GET /system/winterp-laces/</code>
+Возвращает список животных в зимних вольерах.</p>
+<h3 id="_26">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать список животных в зимних вольерах.
+Администраторы: Могут просматривать список животных в зимних вольерах.</p>
+<h2 id="_27">Получение информации о зимнем месте</h2>
+<p><code>GET /system/animals/winterp-laces/{id}/</code>
+Получает информацию о конкретном зимнем месте по ID.</p>
+<h3 id="_28">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать информацию о зимнем месте.
+Администраторы: Могут просматривать информацию о зимнем месте.</p>
+<h2 id="_29">Еда для животных</h2>
+<p><code>GET /system/food/</code>
+Возвращает список видов еды для животных.</p>
+<h3 id="_30">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать список.
+Администраторы: Могут просматривать список.</p>
+<h2 id="_31">Диеты</h2>
+<p><code>GET /system/diet/</code>
+Возвращает список видов диет для животных.</p>
+<h3 id="_32">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать список диет.
+Администраторы: Могут просматривать список диет.</p>
+<h2 id="_33">Получение информации о диете</h2>
+<p><code>GET /system/food/diets/{id}/</code>
+Получает информацию о конкретной диете по ID.</p>
+<h3 id="_34">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать информацию о диете.
+Администраторы: Могут просматривать информацию о диете.</p>
+<h2 id="_35">Получение информации об области</h2>
+<p><code>GET /system/locations/{id}/</code>
+Получает информацию о конкретной области по ID.</p>
+<h3 id="_36">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать информацию об области.
+Администраторы: Могут просматривать информацию об области.</p>
+<h2 id="_37">Список сред обитания</h2>
+<p><code>GET /system/habitats/</code>
+Возвращает список всех сред обитания.</p>
+<h3 id="_38">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать список сред обитания.
+Администраторы: Могут просматривать список сред обитания.</p>
+<h2 id="_39">Получение информации о среде обитания</h2>
+<p><code>GET /system/habitats/{id}/</code>
+Получает информацию о конкретной среде обитания по ID.</p>
+<h3 id="_40">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать информацию о среде обитания.
+Администраторы: Могут просматривать информацию о среде обитания.</p>
+<h1 id="_41">Дополнительные настраиваемые действия</h1>
+<h2 id="_42">Показать пустые клетки</h2>
+<p><code>GET /system/aviaries/show_empty/</code>
+Возвращает список клеток, которые в настоящее время пусты.</p>
+<h3 id="_43">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать список пустых клеток.
+Администраторы: Могут просматривать список пустых клеток.</p>
+<h2 id="_44">Животные в конкретной области</h2>
+<p><code>GET /system/animals/animals_in_communas/</code>
+Возвращает количество животных в каждой области.</p>
+<h3 id="_45">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать количество животных в областях.
+Администраторы: Могут просматривать количество животных в областях.</p>
+<h2 id="_46">Животные в аренде</h2>
+<p><code>GET /system/ownings/animals_in_lease/</code>
+Возвращает информацию о животных в аренде.</p>
+<h3 id="_47">Разрешения</h3>
+<p>Аутентифицированные пользователи: Могут просматривать количество животных в областях.
+Администраторы: Могут просматривать количество животных в областях.</p>
+<hr />
+<h1 id="-django-react">Реализация веб-сервиса зоопарка Django + React</h1>
+<h2 id="1_2">1. Задача</h2>
+<p>Целью было создать клиентскую часть средствами Vue.js.</p>
+<h2 id="2_2">2. Как выполнялась работа</h2>
+<p>Были добавлены новые эндпоинты, отвечающие за работу с аккаунтом юзера - Для этого сперва пришлось сделать кастомную модель юзера - была произведена настройка корсов и с помощью vite был создан темплейта для клиенской части. На фронт-энде я реализовала обращения к моему django серверу и добавила немного ui библиотек для лучшей отзывчивости и приятной работы с сайтом.</p>
+<h2 id="3_2">3. Фрагменты кода</h2>
+<h3 id="_48">Фрагмент раутинга:</h3>
+<pre><code>const routes =[
+    {path: '/login', component: Login},
+    {path: '/register', component: RegisterPage},
+    {path: '/add-aviary', component: AddAviary},
+    {path: '/aviarys', component: AviaryList},
+    {path: '/aviarys/:id', component: AviaryPage},
+    {path: '/empty', component: ShowEmpty},
+    {path: '/add-location', component: AddLocation},
+    {path: '/locations', component: LocationList},
+    {path: '/locations/:id', component: LocationPage},
+    {path: '/locations/:id/in', component: AnimalsIn},
+    {path: '/add-zoo', component: AddZoo},
+    {path: '/zoos', component: ZooList},
+    {path: '/zoos/:id', component: ZooPage},
+    {path: '/add-food', component: AddTOD},
+    {path: '/foods', component: TODList},
+    {path: '/foods/:id', component: TODPage},
+    {path: '/add-diet', component: AddDiet},
+    {path: '/diets', component: DietList},
+    {path: '/diets/:id', component: DietPage},
+    {path: '/add-habitat', component: AddHabitat},
+    {path: '/habitats', component: HabitatList},
+    {path: '/habitats/:id', component: HabitatPage},
+    {path: '/add-animal', component: AddAnimal},
+    {path: '/animals', component: AnimalList},
+    {path: '/animals/:id', component: AnimalPage},
+    {path: '/animals/:id/neighbours', component: InSame},
+    {path: '/add-winter-place', component: AddWP},
+    {path: '/winter-places', component: WPList},
+    {path: '/winter-places/:id', component: WPPage},
+    {path: '/add-owning', component: AddOwning},
+    {path: '/ownings', component: OwningList},
+    {path: '/in-lease', component: InLease},
+    {path: '/ownings/:id', component: OwningPage},
+    {path: '/add-who-is-there', component: AddAIA},
+    {path: '/who-is-theres', component: AIAList},
+    {path: '/who-is-theres/:id', component: AIAPage},
+    {path: '/list-communas', component: AnumalsInCommunas},
+    {path: '/add-worker', component: AddWorker},
+    {path: '/workers', component: WorkerList},
+    {path: '/workers/:id', component: WorkerPage},
+
+]
+</code></pre>
+<h3 id="_49">Фрагменты регистрации:</h3>
+<pre><code>function register(){
+  instance.post('/system/register/', form.value).then(response =&gt; {
+        if (response.status === 201){
+          router.push('/login')
+        }
+      }
+  ).catch(error =&gt; console.log(error))
+}
+
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;v-app&gt;
+    &lt;div class=&quot;w-50 mx-auto&quot;&gt;
+      &lt;h2&gt;Регистрация&lt;/h2&gt;
+      &lt;v-text-field label=&quot;Логин&quot; v-model=&quot;form.username&quot;&gt;&lt;/v-text-field&gt;
+      &lt;v-text-field label=&quot;Пароль&quot; v-model=&quot;form.password&quot;&gt;&lt;/v-text-field&gt;
+      &lt;v-text-field label=&quot;Повторите пароль&quot; v-model=&quot;form.password2&quot;&gt;&lt;/v-text-field&gt;
+      &lt;v-btn @click=&quot;register&quot;&gt;Зарегистрироваться&lt;/v-btn&gt;
+    &lt;/div&gt;
+  &lt;/v-app&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h3 id="_50">Фрагменты авторизации:</h3>
+<pre><code>function login(){
+  instance.post('/system/login/', form.value).then(response =&gt; {
+    if (response.status === 200){
+      Token.setToken(response.data.access)
+      router.push('/rooms')
+    }
+  }
+  ).catch(error =&gt; console.log(error))
+}
+
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;v-app&gt;
+    &lt;div class=&quot;w-50 mx-auto&quot;&gt;
+      &lt;h2&gt;Вход&lt;/h2&gt;
+    &lt;v-text-field label=&quot;Логин&quot; v-model=&quot;form.username&quot;&gt;&lt;/v-text-field&gt;
+    &lt;v-text-field label=&quot;Пароль&quot; v-model=&quot;form.password&quot;&gt;&lt;/v-text-field&gt;
+    &lt;v-btn @click=&quot;login&quot;&gt;Войти&lt;/v-btn&gt;
+    &lt;/div&gt;
+  &lt;/v-app&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="4_2">4. Скриншоты работы</h2>
+<h3 id="_51">Регистрация + авторизация</h3>
+<p><img alt="Главная Страница регистрации" src="assets/img.png" /></p>
+<p><img alt="Страница авторизации в аккаунт" src="assets/img_1.png" /></p>
+<h3 id="_52">Добавление сотрудника</h3>
+<p><img alt="Страница добавления сотрудника" src="assets/img_2.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2024-03-13 21:47:47.994814+00:00
+-->
